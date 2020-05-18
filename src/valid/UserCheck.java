@@ -42,11 +42,11 @@ public class UserCheck {
                 }
             }
         } catch (SecurityException e) {
-            System.out.println("转换安全异常: " + e.getMessage());
+            System.err.println("类型转换安全异常: " + e.getMessage());
         } catch (IllegalAccessException e) {
-            System.out.println("错误的访问属性: " + e.getMessage());
+            System.err.println("访问属性改变错误: " + e.getMessage());
         } catch (IllegalArgumentException e) {
-            e.printStackTrace();
+            System.err.println("非法参数: " + e.getMessage());
         }
         return true;
     }

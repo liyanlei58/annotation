@@ -29,7 +29,7 @@ public class UserFieldFactory {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("发生异常：" + e.getMessage());
             return null;
         }
 
